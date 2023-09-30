@@ -1,0 +1,130 @@
+❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️
+📅📅📅📅📅📅📅📅📅📅📅 30-09-2023 📅📅📅📅📅📅📅📅📅📅
+🧑🏾‍💻🧑🏾‍💻🧑🏾‍💻  Vishal-Programming_Journey Repository Created  🧑🏾‍💻🧑🏾‍💻🧑🏾‍💻
+❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️
+
+💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓
+💾💾💾💾💾💾💾💾💾 REPOSITORY DETAILS 💾💾💾💾💾💾💾💾💾
+
+📁📁📁📁📁📁📁📁
+📁 Seven Folders 📁
+📁📁📁📁📁📁📁📁
+1. HTML CSS Interview Preparation
+                        👉🏾 This Folder will contain all the data related to html css interview preparations
+                        👉🏾 Mostly will contain html css interview related tasks and assignments
+
+2. JS Interview Preparation
+                        👉🏾 This folder will contain JS interview preparations
+                        👉🏾 Will contain JS Technical round questions practices
+                        👉🏾 Will contain JS I/O based practices
+
+3. React Interview Preparation
+                        👉🏾 This folder will contain React Interview preparations
+                        👉🏾 Will contain React Interview Based Tasks and question
+
+4. HTML CSS Projects
+                        👉🏾 This folder will contain all the HTML CSS Practice Projects
+                        👉🏾 NO SUBDIVISION OF FOLDER, ALL IN SERIAL ORDER INSIDE
+
+5. Vanilla JS Projects
+                        👉🏾 This folder will contain all the Vanilla JS Practice Projects
+                        👉🏾 NO SUBDIVISION OF FOLDER, ALL IN SERIAL ORDER INSIDE
+
+6. React Functional Projects
+                        👉🏾 This folder will contain all the React Functional Based Practice Projects
+                        👉🏾 NO SUBDIVISION OF FOLDER, ALL IN SERIAL ORDER INSIDE
+
+7. React Class Projects
+                        👉🏾 This folder will contain all the React Class Based Practice Projects
+                        👉🏾 NO SUBDIVISION OF FOLDER, ALL IN SERIAL ORDER INSIDE
+
+
+🔴NOTE- INSIDE EVERY FOLDER THERE IS A TEXT FILE WITH THE NAME SAME AS THE FOLDER, THE FILE IS TO MAKE ANY NOTES RELATED TO THE FOLDER.
+
+🗃️🗃️🗃️🗃️🗃️🗃️🗃️🗃️
+🗃️   Four Files  🗃️
+🗃️🗃️🗃️🗃️🗃️🗃️🗃️🗃️
+1. Repository_Structure.txt
+            👉🏾 This file contains the folder and file structure and details of the repository\
+
+2. index.txt
+            👉🏾 This file will have the daily basis date wise index
+
+3. HTML_CSS_notes.txt
+            👉🏾 This file will have any notes related to HTML and CSS
+
+4. js_notes.txt
+            👉🏾 This will have any notes related to JS
+
+5. react_notes.txt
+            👉🏾 This file will have any notes related to React.JS
+
+💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+📁 1. HTML CSS Interview Preparation 📁
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
+
+
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+📁 2. JS Interview Preparation       📁
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
+
+
+
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+📁 3. React Interview Preparation    📁
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
+
+
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+📁 4. HTML CSS Projects              📁
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
+
+
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+📁 5. Vanilla JS Projects            📁
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
+
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+📁 6. React Functional Projects      📁
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+📁 7. React Class Projects           📁
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
