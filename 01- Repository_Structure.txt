@@ -121,7 +121,7 @@
 📁 6. React Functional Projects      📁
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
-📅 30-09-2023    
+📅 30-09-2023
             👉🏾 01) React Simple Tasks App to play With States
             🖊️ Simple react tasks with all different ideas to play with states and reusable components
 
