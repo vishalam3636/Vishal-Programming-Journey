@@ -6,3 +6,8 @@
 📅 30-09-2023   
             📁(06- React Functional Projects)
                         👉🏾 01) React Simple Tasks App to play With States
+
+
+📅 03-10-2023 
+            📁(08- Mixed Practice Projects)
+                        🫱🏾 01) (React) Simple CRUD Operation
