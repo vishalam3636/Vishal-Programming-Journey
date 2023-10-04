@@ -39,6 +39,9 @@
                         👉🏾 NO SUBDIVISION OF FOLDER, ALL IN SERIAL ORDER INSIDE
 
 
+8. Mixed Practice Projects
+                        👉🏾 This folder will have my random ALL TOPICs Practices Apps
+
 🔴NOTE- INSIDE EVERY FOLDER THERE IS A TEXT FILE WITH THE NAME SAME AS THE FOLDER, THE FILE IS TO MAKE ANY NOTES RELATED TO THE FOLDER.
 
 🗃️🗃️🗃️🗃️🗃️🗃️🗃️🗃️
@@ -77,8 +80,11 @@
 📁 2. JS Interview Preparation       📁
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
-
-
+📅 04-10-2023
+            📁01- JS Coding questions
+                                👉🏾 01) Check for Anagram
+                                                🧑🏾‍💻 method-1: Sorted Strings Equating
+                                                🧑🏾‍💻 method-2: Taking object
 
 
 

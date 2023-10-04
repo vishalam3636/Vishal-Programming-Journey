@@ -11,3 +11,10 @@
 📅 03-10-2023 
             📁(08- Mixed Practice Projects)
                         🫱🏾 01) (React) Simple CRUD Operation
+
+
+📅 04-10-2023
+            📁01- JS Coding questions
+                                    👉🏾 01) Check for Anagram
+                                                    🧑🏾‍💻 method-1: Sorted Strings Equating
+                                                    🧑🏾‍💻 method-2: Taking object
