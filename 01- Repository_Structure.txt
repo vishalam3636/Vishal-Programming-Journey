@@ -132,6 +132,18 @@
             🖊️ Simple react tasks with all different ideas to play with states and reusable components
 
 
+📅 05-10-2023
+            👉🏾 02) User Comment Reply App (day-01)
+            🖊️ The App is Post-Comment-Reply App
+            📝 The idea is that we are accessing users from JSON placeholder, those users will be able to make post and comment and Replies
+            📝 Among the users, one user will login and make a post, the post will be displayed on a common page to display all the posts of all the users and the particular user can its post by going on its profile
+            📝 Those Users who didn't have made the post when login will able to see the posts on the common posts page and will be able to make commnent and replies for the particular post
+            🧑🏾‍💻 Focuses on structuring nested datas and handling states and routes and protected routes
+
+
+
+
+
 
 
 
