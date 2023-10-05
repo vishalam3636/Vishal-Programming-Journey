@@ -1,0 +1,24 @@
+.navigationpage {
+    background-color: black;
+    color: #fff;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+  
+  .navigationpage .buttoncontainer button {
+    height: 40px;
+    width: 110px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.4s;
+  }
+  
+  .navigationpage .buttoncontainer button:hover {
+    background-color: crimson;
+    color: #fff;
+  }
+  
