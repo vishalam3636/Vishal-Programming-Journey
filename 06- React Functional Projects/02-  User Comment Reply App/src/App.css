@@ -25,3 +25,8 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+/* main page common stylings */
+.mainpage {
+  padding-top: 70px;
+}

@@ -1,38 +1,53 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// pages
-import Navigation from "./pages/navigation/Navigation";
-import Home from "./pages/home/Home";
-import Profile from "./pages/profile/Profile";
-import Posts from "./pages/posts/Posts";
-import ErrorPage from "./pages/error/ErrorPage";
-import SignIn from "./pages/signin/Signin";
-
 import axios from "axios";
 
-// components
+// importing pages
+import ErrorPage from "./pages/error/ErrorPage";
+import Welcome from "./pages/public/welcome/Welcome";
+import SignIn from "./pages/public/signin/SignIn";
+import SignUp from "./pages/public/signup/SignUp";
+import Posts from "./pages/users/posts/Posts";
+import Profile from "./pages/users/profile/Profile";
+import Home from "./pages/users/home/Home";
+import Navigation from "./components/navigation/Navigation";
+
+// APIS
+import { getUsers } from "./APIS/APIS";
+
+// importing encapsulating components
+import PublicEncapsulating from "./components/encapsulatingComponents/public-encapsulating/PublicEncapsulating";
+import UserEncapsulating from "./components/encapsulatingComponents/user-encapsulating/UserEncapsulatings";
+import About from "./pages/users/about/About";
+import Contact from "./pages/users/contact/Contact";
 
 export default function App() {
   const [users, setUsers] = useState([]);
   const [loggedInUser, setLoggedInUser] = useState(null);
 
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/users")
-      .then((res) => {
-        console.log(res.data);
-        setUsers(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
+    getUsers().then((res) => {
+      let gotUsers = [...res.data];
+
+      let updatedUserStructure = gotUsers.map((user) => {
+        return {
+          ...user,
+          myposts: [],
+        };
       });
+      console.log(updatedUserStructure, ">>>updated user DS");
+      setUsers(updatedUserStructure);
+    });
   }, []);
 
   // handle login
   const handleLogin = (loggedUser) => {
-    console.log(loggedUser);
+    console.log(
+      loggedUser,
+      ">>>> logged user in app.js after signi-in success"
+    );
+    setLoggedInUser(loggedUser);
   };
 
   console.log(users, ">>>>>>>users");
@@ -40,24 +55,89 @@ export default function App() {
     <div className="App">
       {/* <h1>Comment Application</h1> */}
       <BrowserRouter>
-        <Navigation />
         <Routes>
-          {/* public accessable pages */}
-          <Route exact path="/" element={<Home />} />
+          {/************ public accessable pages **********/}
+          <Route
+            exact
+            path="/"
+            element={
+              <PublicEncapsulating>
+                <Welcome />
+              </PublicEncapsulating>
+            }
+          />
           <Route
             exact
             path="/signin"
-            element={<SignIn users={users} handleLogin={handleLogin} />}
+            element={
+              <PublicEncapsulating>
+                <SignIn users={users} handleLogin={handleLogin} />
+              </PublicEncapsulating>
+            }
+          />
+          <Route
+            exact
+            path="/signup"
+            element={
+              <PublicEncapsulating>
+                <SignUp />
+              </PublicEncapsulating>
+            }
           />
 
-          {/* User accessable pages */}
-          <Route exact path="/user-profile" element={<Profile />} />
-          <Route exact path="/posts" element={<Posts />} />
+          {/************ User accessable pages **************/}
+          <Route
+            exact
+            path="/home"
+            element={
+              <UserEncapsulating loggedInUser={loggedInUser}>
+                <Home />
+              </UserEncapsulating>
+            }
+          />
+          <Route
+            exact
+            path="/user-profile"
+            element={
+              <UserEncapsulating>
+                <Profile />
+              </UserEncapsulating>
+            }
+          />
+          <Route
+            exact
+            path="/posts"
+            element={
+              <UserEncapsulating>
+                <Posts />
+              </UserEncapsulating>
+            }
+          />
+          <Route
+            exact
+            path="/about"
+            element={
+              <UserEncapsulating>
+                <About />
+              </UserEncapsulating>
+            }
+          />
+          <Route
+            exact
+            path="/contact"
+            element={
+              <UserEncapsulating>
+                <Contact />
+              </UserEncapsulating>
+            }
+          />
 
-          {/* error page */}
+          {/***************** error page ********************/}
           <Route exact path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
+
+      {/* <Home /> */}
     </div>
   );
 }
