@@ -28,3 +28,19 @@
                                                     📝 Those Users who didn't have made the post when login will able to see the posts on the common posts page and will be able to make commnent and replies for the particular post
                                                     🧑🏾‍💻 Focuses on structuring nested datas and handling states and routes and protected routes
 
+
+📅 07-10-2023 (didnt made commit)
+📅 08-10-2023
+            📁(06- React Functional Projects)
+                                    👉🏾 02) User Comment Reply App (day-02 and day-03)
+                                                    🖊️ Changed the folder structure little
+                                                    🖊️ Basic Application Layout Made, with the proper protected route for different users
+                                                    🖊️ There are two user types- Public and Application user
+                                                    🖊️ #Public users are basically the users who arent logged
+                                                    🖊️ #Application Users are basically who are logged in
+                                                    🖊️ Public Users pages- Signin, Signup, Welcome 
+                                                    🖊️ Application Users pages- About, Contact, Home, posts, profile
+                                                    📝 There are encapsulating components, they have their respective children components
+                                                    📝 In encapsulating components the logics has been set for accessing pages.
+                                                        Like- the public user won't be able to access Application users pages and the Application Users wont be able to access Public users pages unless they are logged out.
+
