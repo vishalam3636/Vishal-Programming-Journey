@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import "react-toastify/dist/ReactToastify.css";
 
 // importing pages
 import ErrorPage from "./pages/error/ErrorPage";
@@ -11,7 +11,6 @@ import SignUp from "./pages/public/signup/SignUp";
 import Posts from "./pages/users/posts/Posts";
 import Profile from "./pages/users/profile/Profile";
 import Home from "./pages/users/home/Home";
-import Navigation from "./components/navigation/Navigation";
 
 // APIS
 import { getUsers } from "./APIS/APIS";

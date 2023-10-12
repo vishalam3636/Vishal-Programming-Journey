@@ -12,6 +12,10 @@
   height: 70px;
 }
 
+.navigationpage .logocontainer h3 {
+  cursor: pointer;
+}
+
 .navigationpage .menucontainer {
   /* background-color: grey; */
   padding: 5px;

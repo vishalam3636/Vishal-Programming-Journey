@@ -18,11 +18,9 @@ export default function UserEncapsulatings({ children }) {
       navigate("/");
       localStorage.clear();
     }
-
-    console.log("yyoooo in usercaps");
   });
 
-  console.log(isLoggedin, ">>>>islogged in");
+  console.log(">>>>public encaps");
   return (
     <>
       <Navigation />

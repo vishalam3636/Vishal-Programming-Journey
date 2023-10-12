@@ -19,6 +19,7 @@ export default function PublicEncapsulating({ children }) {
     setIsLoggedin(loggedin);
   });
 
+  console.log(">>>>public encaps");
   return (
     <>
       <Navigation />
