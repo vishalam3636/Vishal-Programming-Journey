@@ -79,7 +79,7 @@ export default function App() {
             path="/signup"
             element={
               <PublicEncapsulating>
-                <SignUp />
+                <SignUp users={users} />
               </PublicEncapsulating>
             }
           />

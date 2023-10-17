@@ -161,7 +161,7 @@
                             🖊️ The new idea is that, the user will signup using email and password.
                             🖊️ An email with the OTP will be sent to the users email and a popup modal to confirm the email will open.
                             🖊️ We'll have to store the sent otp and email and password in some state, which then will be compared with the otp submit by the new user.
-                            🖊️ If the OTP matches, the user will be redirected to some basic details form. Where the user will update basic details and on submitting the details, a new will get created. And the user will be redirected to the home page
+                            🖊️ If the OTP matches, the user will be redirected to some basic details form. Where the user will update basic details and on submitting the details, a new will get created. And the user will be redirected to the home page+
 
 
 
