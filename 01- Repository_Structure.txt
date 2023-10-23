@@ -157,11 +157,25 @@
 
 
 📅 12-10-2023
-            👉🏾 02) Updated the signup form with a new idea and installed MUI for modal component and installed react-toastify 
+            👉🏾 02) User Comment Reply App (day-02 and day-03)
+                            Updated the signup form with a new idea and installed MUI for modal component and installed react-toastify 
                             🖊️ The new idea is that, the user will signup using email and password.
                             🖊️ An email with the OTP will be sent to the users email and a popup modal to confirm the email will open.
                             🖊️ We'll have to store the sent otp and email and password in some state, which then will be compared with the otp submit by the new user.
                             🖊️ If the OTP matches, the user will be redirected to some basic details form. Where the user will update basic details and on submitting the details, a new will get created. And the user will be redirected to the home page+
+
+
+📅 23-10-2023 (Index file updating because couldn't do it on 18-10-2023)
+            👉🏾 02) User Comment Reply App (day-02 and day-03)
+                            🖊️ signup part is validated, existing user testing done and sending and otp confirmation done
+                                                    ⚠️ Found an Issue in the app, it's since i'am passing data using props in SignIn.js component, and so when i going directly from welcome page to sign-in page, then all the users is accessable and so i can match the sign-in credentials details from the list of users which i am getting in props from App.js component in SignIn component.
+
+                                                    But the issue here will be when i'll refresh the sign-in page, then  i wont be getting the list of users in the props, it'll be undefined. So, if i'll try to find the signin in user, i wont be getting the user, because the users is defined.
+                                                    To resolve this issue, there's one way, it's i'll make a callback function in App.js and when the user will click sign-in button after writing credentials, the callback function will be called and will check if the user exists in the list of all the users.
+                                                    But there will few challenges- 1. Mainting the user login
+                                                           2. Passing the logged in user data in different pages, becuase i dont want to use local storage for storing all the data. 
+                                                           
+                                                    Well i'll look into it when the issue will come. There's always some way 😄😉 
 
 
 
