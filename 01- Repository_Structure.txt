@@ -201,7 +201,8 @@
 
 📅 29-10-2023
             📁(08- Mixed Practice Projects)
-                            👉🏾 02) Firebase Practice-1
+                            👉🏾 02) Firebase Practice-1 
+                                   🔗 My chat with chatgpt on the topic- https://chat.openai.com/share/87bc7a67-5ad2-4261-bce9-f13f70e19a95
                                    🖊️ Created a simpel react-firebase becuase, basically connected the react app with the realtime database
                                    📝 NOTE-1:
                                           👉🏾 Bascially we are first we need to initialize 
