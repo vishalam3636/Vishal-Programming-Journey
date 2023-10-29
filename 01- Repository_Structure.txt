@@ -197,5 +197,50 @@
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 📅 03-10-2023 
             📁(08- Mixed Practice Projects)
-                        🫱🏾 01) (React) Simple CRUD Operation
+                            🫱🏾 01) (React) Simple CRUD Operation
+
+📅 29-10-2023
+            📁(08- Mixed Practice Projects)
+                            👉🏾 02) Firebase Practice-1
+                                   🖊️ Created a simpel react-firebase becuase, basically connected the react app with the realtime database
+                                   📝 NOTE-1:
+                                          👉🏾 Bascially we are first we need to initialize 
+                                          👉🏾 Firebase using the initializeApp functions.
+                                                 InitializeApp is a crucial step in using Firebase because it sets up the connection between your application and your specific Firebase project. It provides the necessary details and configurations for Firebase services to work within your app. Without initialization, your app would not be able to access or interact with Firebase services.
+                                          👉🏾 We are doing this in firebase.js file
+                                   
+                                   📝 NOTE-2:
+                                          👉🏾 In App.js file we are creating a instance of our database by "const db = getDatabase();"
+                                          👉🏾 there are methods like- set, get, update, remove, and onValue to get or manupulate data in out database, we'll have to pass the reference of our database as the first parameter, and we give this reference using ref method, the parameter ref takes is the instance of database
+                                                        example-
+                                                               🧑🏾‍💻 const db = getDatabase();
+                                                                      
+                                                               // Example: Set data
+                                                               set(ref(db, "users/vishal"), {
+                                                               id: 1,
+                                                               username: "Vishal",
+                                                               age: "27",
+                                                               });
+
+                                                               // Example: Get data
+                                                               get(ref(db, "users/vishal")).then((snapshot) => {
+                                                               if (snapshot.exists()) {
+                                                               const data = snapshot.val();
+                                                               console.log(data);
+                                                               } else {
+                                                               console.log("No data available");
+                                                               }
+                                                               });
+
+                                                               // Example: Update data
+                                                               update(ref(db, "users/vishal"), { age: "28" });
+
+                                                               // Example: Remove data
+                                                               remove(ref(db, "users/vishal"));
+
+                                                               // Example: Listen for changes
+                                                               onValue(ref(db, "users/vishal"), (snapshot) => {
+                                                               const data = snapshot.val();
+                                                               console.log(data);
+                                                               });
 
