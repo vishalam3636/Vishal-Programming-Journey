@@ -118,3 +118,14 @@
                                                                              console.log(data);
                                                                              });
 
+
+📅 31-10-2023
+            📁(08- Mixed Practice Projects)
+                                    👉🏾 02) Firebase Practice-1
+                                          🖊️ Worked on Signup uusing Email/Password
+                                          🖊️ Signup using email/password is part of Authentication.
+                                          📝 There is a method "createUserWithEmailAndPassword" which is provided by "firebase/auth".
+                                          1️⃣ We have to import "auth" and "createUserWithEmailAndPassword" from "firebase/auth".
+                                          2️⃣ We have to make instance of auth like previously we have built instance of firebase daabase.
+                                          3️⃣ In "createUserWithEmailAndPassword" we'll pass auth, amail and password and it'll return a promise.
+                                          If the email already exists it'll return that the email is already in use.
