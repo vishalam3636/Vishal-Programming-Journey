@@ -9,11 +9,13 @@ export default function Signup() {
   const auth = getAuth();
 
   const signupUser = () => {
-    createUserWithEmailAndPassword(auth, newUser.email, newUser.password).then(
-      (value) => {
+    createUserWithEmailAndPassword(auth, newUser.email, newUser.password)
+      .then((value) => {
         console.log(value, ">>>> value");
-      }
-    );
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   const handleChange = (e) => {
