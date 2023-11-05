@@ -256,3 +256,16 @@
                                           2️⃣ We have to make instance of auth like previously we have built instance of firebase daabase.
                                           3️⃣ In "createUserWithEmailAndPassword" we'll pass auth, amail and password and it'll return a promise.
                                           If the email already exists it'll return that the email is already in use.
+
+
+📅 05-12-2023 (Signin using email and password)
+            📁(08- Mixed Practice Projects)
+                                    👉🏾 02) Firebase Practice-1
+                                          🖊️ Worked on Signin using Email and Password
+                                          🖊️ Signin using email/password is part of Authentication.
+                                          📝 There is a method "signInWithEmailAndPassword" which is provided by "firebase/auth".
+                                          1️⃣ We have to import "auth" and "signInWithEmailAndPassword" from "firebase/auth".
+                                          2️⃣ We have to make instance of auth like previously we have built instance of firebase daabase.
+                                          3️⃣ In "signInWithEmailAndPassword" we'll pass auth, email and password and it'll return a promise.
+                                          If the email and password exists in firebase's build authentication it'll return the user credentials.
+                                          (There are alot of details coming in response)
