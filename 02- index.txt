@@ -148,3 +148,41 @@
                                     👉🏾 Added This New Project Folder
                                     👉🏾 This Project folder has all the basic React Logic Practices.
                                     👉🏾 This Project will always be getting upated with react logics
+
+
+
+
+📅 09-01-2024
+            📁(08- Mixed Practice Projects)
+                                   👉🏾 04- React Firebase Setup
+                                          🖊️ Basic React Setup
+                                          🖊️ Make a project in firebase
+                                          🖊️ Make a "web-app" in firebase
+                                          🖊️ SDK setup and configuration firebase in react-app,
+                                                        - npm install firebase
+                                          🖊️ Make a react-app, Then, initialize Firebase and begin using the SDKs for the products you'd like to use.
+                                          We did it in firebase.js file
+                                          
+                                          ```
+                                          // Import the functions you need from the SDKs you need
+                                          import { initializeApp } from "firebase/app";
+                                          // TODO: Add SDKs for Firebase products that you want to use
+                                          // https://firebase.google.com/docs/web/setup#available-libraries
+
+                                          // Your web app's Firebase configuration
+                                          const firebaseConfig = {
+                                          apiKey: "AIzaSyCx21Fg3QojkS6benmUjxWG4_Ni253rtCk",
+                                          authDomain: "fir-project-login-a3498.firebaseapp.com",
+                                          databaseURL: "https://fir-project-login-a3498-default-rtdb.firebaseio.com",
+                                          projectId: "fir-project-login-a3498",
+                                          storageBucket: "fir-project-login-a3498.appspot.com",
+                                          messagingSenderId: "612067476154",
+                                          appId: "1:612067476154:web:ed3008e2de933540807883"
+                                          };
+
+                                          // Initialize Firebase
+                                          const app = initializeApp(firebaseConfig);
+                                          ```
+                                   
+       
+
