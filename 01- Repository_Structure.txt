@@ -269,3 +269,17 @@
                                           3️⃣ In "signInWithEmailAndPassword" we'll pass auth, email and password and it'll return a promise.
                                           If the email and password exists in firebase's build authentication it'll return the user credentials.
                                           (There are alot of details coming in response)
+
+
+
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+📁 9. React Logic Practices          📁
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+📅 09-01-2024
+            📁(09-React Logic Practices)
+                                    👉🏾 Added This New Project Folder
+                                    👉🏾 This Project folder has all the basic React Logic Practices.
+                                    👉🏾 Few Logiocs are already practiced in this folder
