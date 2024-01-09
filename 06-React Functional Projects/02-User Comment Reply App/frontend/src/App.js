@@ -21,6 +21,9 @@ import UserEncapsulating from "./components/encapsulatingComponents/user-encapsu
 import About from "./pages/users/about/About";
 import Contact from "./pages/users/contact/Contact";
 
+// Functions
+import { signInReusableFunction } from "./reusableFunctions/ReusableFunctions";
+
 export default function App() {
   const [users, setUsers] = useState([]);
   const [loggedInUser, setLoggedInUser] = useState(null);

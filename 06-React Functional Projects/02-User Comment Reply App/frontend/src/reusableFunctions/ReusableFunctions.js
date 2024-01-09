@@ -99,3 +99,10 @@ export const generateOtp = () => {
   console.log(geratedOTP);
   return geratedOTP;
 };
+
+// ======================================================== //
+// =============== SIGNIN Components Functions ============ //
+// ======================================================== //
+export const signInReusableFunction = () => {
+  console.log("signIn button clicked, function is in reusble compoennts");
+};

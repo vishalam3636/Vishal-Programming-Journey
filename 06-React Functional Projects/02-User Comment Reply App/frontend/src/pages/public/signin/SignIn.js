@@ -2,8 +2,11 @@ import "./signin.css";
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-export default function SignIn({ handleLogin, users }) {
-  const [allUsers, setAllUsers] = useState(users);
+// imports for notification
+import { ToastContainer, toast } from "react-toastify";
+import { signInReusableFunction } from "../../../reusableFunctions/ReusableFunctions";
+
+export default function SignIn({ handleLogin }) {
   const [loginCreds, setLoginCreds] = useState({ username: "", password: "" });
 
   // for navigation
@@ -18,12 +21,9 @@ export default function SignIn({ handleLogin, users }) {
 
   const handleSignInSubmit = () => {
     if (!loginCreds.username.trim() || !loginCreds.password.trim()) {
-      alert("Username and Password fields are required");
+      toast.error("Username and Password fields are required");
     } else {
-      let userValidation = allUsers.find((user) => {
-        return user.username === loginCreds.username;
-      });
-
+      signInReusableFunction();
       if (userValidation) {
         console.log(userValidation, ">>>>user validation");
         localStorage.setItem("user", JSON.stringify(userValidation));
@@ -39,7 +39,8 @@ export default function SignIn({ handleLogin, users }) {
   };
 
   // console.log(handleLogin, ">>>>handle login in signin.js");
-  // console.log(allUsers, ">>>>>>>All users in signin.js");
+  console.log(users, ">>>>>>>>>users in props");
+  console.log(allUsers, ">>>>>>>All users in signin.js");
   console.log(loginCreds, ">>>>>>>>login creds");
   return (
     <div className="signinpage mainpage">
@@ -74,6 +75,9 @@ export default function SignIn({ handleLogin, users }) {
           </small>
         </div>
       </div>
+
+      {/* Component For Notiffications */}
+      <ToastContainer theme="dark" />
     </div>
   );
 }

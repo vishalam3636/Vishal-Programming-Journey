@@ -22,7 +22,7 @@ export default function Signup() {
     setNewUser({ ...newUser, [e.target.name]: e.target.value });
   };
 
-  console.log(newUser, ">>> new user");
+  //   console.log(newUser, ">>> new user");
 
   const containerStyle = {
     border: "2px solid black",

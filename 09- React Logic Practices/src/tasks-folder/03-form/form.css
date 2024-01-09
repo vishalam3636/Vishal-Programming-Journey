@@ -1,0 +1,11 @@
+.form-component-container button{
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-component-container button:hover{
+    background-color: crimson;
+    border-color: #fff;
+    color: #fff;
+}

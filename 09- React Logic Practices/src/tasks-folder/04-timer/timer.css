@@ -1,0 +1,21 @@
+.timer-container{
+    /* background-color: lightcoral; */
+}
+
+
+.timer-container .display-timer-container{
+    /* background-color: pink; */
+    font-size: 30px;
+}
+
+.timer-container .button-timer-container{
+    /* background-color: red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 200px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}

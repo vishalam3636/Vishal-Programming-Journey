@@ -1,0 +1,32 @@
+.counter-container .wrapper-container {
+    background-color: lightgray;
+    padding: 30px;
+    width: max-content;
+    /* margin: auto; */
+}
+
+.counter-container .display-container{
+    background-color: lightcoral;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.counter-container .button-container{
+    background-color: lightpink;
+    margin: 15px;
+}
+
+.counter-container .button-container button{
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.counter-container .button-container button:hover{
+    background-color: crimson;
+    color: #fff;
+    border-color: crimson;
+}

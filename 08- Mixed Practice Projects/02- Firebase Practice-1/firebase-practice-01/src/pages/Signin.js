@@ -43,7 +43,7 @@ export default function Signin() {
     padding: "30px",
   };
 
-  console.log(userCred, ">>>>userCred in login");
+  //   console.log(userCred, ">>>>userCred in login");
   return (
     <div className="signin-page" style={containerStyle}>
       <h3>SignIn Page</h3>

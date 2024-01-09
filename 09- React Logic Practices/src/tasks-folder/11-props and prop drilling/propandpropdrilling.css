@@ -1,0 +1,112 @@
+/* css for parent component (login form */
+.test-component, .display-childs{
+    border: 2px solid black;
+    padding: 20px 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.test-component h6, .display-childs h6{
+    border-bottom: 2px solid black;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 5px 20px;
+    border-radius: 12px;
+}
+
+.all-test-components{
+    border: 1px solid maroon;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow: auto;
+}
+
+.form-container {
+    max-width: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.field-container input {
+    height: 35px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+.button-container button:hover {
+    background-color: crimson;
+    border-color: transparent;
+    color: #fff;
+}
+
+.display-childs {
+    border: 2px solid purple;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.child-component{
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.test-component .note{
+    width: 600px;
+    border: 1px solid blue;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+.test-component .note .note-text {
+    height: 200px;
+    overflow: auto;
+    padding: 0px 10px ;
+    padding-top: 20px;
+    background-color: lightcyan;
+    border-radius: 5px;
+}
+
+.test-component .note p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* Child Components stylings */
+.all-test-components .childA{
+    background-color: lightcoral;
+}
+
+.all-test-components .childB{
+    background-color: lightyellow;
+}
+
+.all-test-components .childC{
+    background-color: lightgreen;
+}
+
+.all-test-components .childD{
+    background-color: orange;
+}
