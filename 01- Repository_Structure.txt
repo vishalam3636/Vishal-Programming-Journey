@@ -304,10 +304,136 @@
                                           // Initialize Firebase
                                           const app = initializeApp(firebaseConfig);
                                           ```
+                                          🖊️ In this only we have tested if the firebase isconfigured or not in out app by adding a user data in Firebase-RealtimeDatabase
+                                          🖊️ We did it by importing {getDatabase} from firebase/database
+                                          🖊️ Heres the code-
+                                          ```
+                                          // Import the functions you need from the SDKs you need
+                                          import { initializeApp } from "firebase/app";
+                                          // TODO: Add SDKs for Firebase products that you want to use
+                                          // https://firebase.google.com/docs/web/setup#available-libraries
+
+                                          import { getDatabase } from "firebase/database";
+
+                                          // Your web app's Firebase configuration
+                                          const firebaseConfig = {
+                                          apiKey: "AIzaSyC79QfVQkRTjYSwDdLcZeu58Z6-_XnvM4g",
+                                          authDomain: "fir-project-75d14.firebaseapp.com",
+                                          databaseURL: "https://fir-project-75d14-default-rtdb.firebaseio.com",
+                                          projectId: "fir-project-75d14",
+                                          storageBucket: "fir-project-75d14.appspot.com",
+                                          messagingSenderId: "493334001379",
+                                          appId: "1:493334001379:web:e875dc1be25b612636f7d6",
+
+                                          // The value of `databaseURL` depends on the location of the database
+                                          databaseURL: "https://fir-project-75d14-default-rtdb.firebaseio.com",
+                                          };
+
+                                          // Initialize Firebase
+                                          export const app = initializeApp(firebaseConfig);
+
+                                          // Initialize Realtime Database and get a reference to the service
+                                          export const db = getDatabase(app);
+                                          ```
+
                                    
+       
+
+📅 10-01-2024
+            📁(08- Mixed Practice Projects)
+                                   👉🏾 05- Firebase Authentication
+                                          🖊️ In this Folder, we are doing Firebase Authentication
+                                          🖊️ For that we'll use Firebase Authentication Service.
+                                          🖊️ First we made a signUp form from where the user can SignUp using Email and Password
+                                          🖊️ Next we are using Firebase Authentication to Login the user using Email and Password.
+
+                                   🧑🏾‍💻 Code For Creating user
+                                          📝 Fire we'll have to import {getAuth} from firebase/auth
+                                          📝 We'll then export the function
+                                          📝 We'll then import {signInWithEmailAndPassword} from firebase/auth
+
+                                          ```
+                                          // Import the functions you need from the SDKs you need
+                                          import { initializeApp } from "firebase/app";
+                                          // TODO: Add SDKs for Firebase products that you want to use
+                                          // https://firebase.google.com/docs/web/setup#available-libraries
+
+                                          import { getDatabase } from "firebase/database";
+                     👉🏾 NEW  ADD          import { getAuth } from "firebase/auth";
+
+                                          // Your web app's Firebase configuration
+                                          const firebaseConfig = {
+                                          apiKey: "AIzaSyC79QfVQkRTjYSwDdLcZeu58Z6-_XnvM4g",
+                                          authDomain: "fir-project-75d14.firebaseapp.com",
+                                          databaseURL: "https://fir-project-75d14-default-rtdb.firebaseio.com",
+                                          projectId: "fir-project-75d14",
+                                          storageBucket: "fir-project-75d14.appspot.com",
+                                          messagingSenderId: "493334001379",
+                                          appId: "1:493334001379:web:e875dc1be25b612636f7d6",
+
+                                          // The value of `databaseURL` depends on the location of the database
+                                          databaseURL: "https://fir-project-75d14-default-rtdb.firebaseio.com",
+                                          };
+
+                                          // Initialize Firebase
+                                          export const app = initializeApp(firebaseConfig);
+
+                                          // Initialize Realtime Database and get a reference to the service
+                                          export const db = getDatabase(app);
+                     👉🏾 NEW  ADD          export const auth = getAuth();
+                                          ```
+
+                                          🖊️ In Form Page, we import {createUserWithEmailAndPassword } from "firebase/auth"
+                                          🖊️ We also import the {auth} from firebase.js folder, where we have initialized getAuth() .
+                                          🖊️ This function takes in three parameters- auth, email and Password
+
+                                          ```
+                                          createUserWithEmailAndPassword(auth, userCred.email, userCred.password)
+                                                 .then((userCredential) => {
+                                                 // Signed in
+                                                 const user = userCredential.user;
+                                                 console.log(user, ">>>>>user");
+                                                 setUserCred({ email: "", password: "" });
+                                                 alert("Succccessfully created user");
+                                                 setSubmitForm(false);
+                                                 })
+                                                 .catch((error) => {
+                                                 const errorCode = error.code;
+                                                 const errorMessage = error.message;
+                                                 console.log(errorCode, ">>>>>errorCode");
+                                                 console.log(errorMessage, ">>>>>errorMessage");
+                                                 setUserCred({ email: "", password: "" });
+                                                 alert(errorMessage);
+                                                 });
+                                          ```
+                                   
+                                   🧑🏾‍💻 Code For Signing in user
+                                          🖊️ The first is same as in Create User, i.e; initializing getAuth in our app.
+                                          🖊️ In the next part, we'll import {signInWithEmailAndPassword } from "firebase/auth"
+                                          🖊️ This method also takes in three parameters- auth, email and password
+
+                                          ```
+                                          signInWithEmailAndPassword(auth, userCred.email, userCred.password)
+                                                 .then((userCredential) => {
+                                                 // Signed in
+                                                 const user = userCredential.user;
+
+                                                 console.log(user, ">>>>>user");
+                                                 console.log(user.email, ">>>>>user email");
+                                                 alert(JSON.stringify({ email: user.email, uuid: user.uid }));
+                                                 })
+                                                 .catch((error) => {
+                                                 const errorCode = error.code;
+                                                 const errorMessage = error.message;
+                                                 console.log(errorCode, ">>>>>errorCode");
+                                                 console.log(errorMessage, ">>>>>errorMessage");
+                                                 alert(errorCode);
+                                                 });
+                                          ```
 
 
 
+                                          
 
 
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
@@ -320,3 +446,4 @@
                                     👉🏾 This Project folder has all the basic React Logic Practices.
                                     👉🏾 Few Logiocs are already practiced in this folder
                                     👉🏾 This Project will always be getting upated with react logics
+
