@@ -1,13 +1,13 @@
 import "./App.css";
 
 import { ref, set } from "firebase/database";
-import { app, db } from "./firebase";
+import { db } from "./firebase";
 
 function App() {
   const putData = () => {
     set(ref(db, "users/vishal"), {
       id: 1,
-      name: "Vishal Singh Chauhan",
+      name: "Vishal Chauhannnnn",
       age: 27,
     });
   };
