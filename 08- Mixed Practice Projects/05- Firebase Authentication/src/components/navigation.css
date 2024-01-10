@@ -1,0 +1,26 @@
+.firebaseauthenticationnavigationcontainer{
+    /* background-color: red; */
+}
+
+.firebaseauthenticationnavigationcontainer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.firebaseauthenticationnavigationcontainer ul li{
+    background-color: transparent;
+    text-align: center;
+}
+
+.firebaseauthenticationnavigationcontainer ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.firebaseauthenticationnavigationcontainer ul li a.active{
+    background-color: rgb(255, 112, 141);
+}
