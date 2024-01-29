@@ -309,3 +309,11 @@
                                                  alert(errorCode);
                                                  });
                                           ```
+
+
+📅 29-01-2024
+            📁(08- Mixed Practice Projects)
+                                   👉🏾 06- Firebase Correct Way using
+                                   🖊️ We have used Context API for it.
+                                   📝 Made a "firebase.js" file, theres aprovider and we have wrapped the provider around app in index.js file
+                                   🖊️ Used example of createUserWithEmailAndPassword and Firebase's Realtime Database.
