@@ -1,7 +1,10 @@
 import "./signuppage.css"
 import React, {useState} from "react";
 
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, useLocation } from "react-router-dom";
+
+// toastify
+import { ToastContainer, toast } from 'react-toastify';
 
 // login context
 import { useLogin } from "../../contexts/LoginContext";
@@ -10,6 +13,8 @@ export default function SignupPage() {
     const login = useLogin();
 
     const navigate = useNavigate();
+    let location = useLocation();
+    let currentPath = location.pathname;
 
     const [userDetails, setUserDetails] = useState({
         username: "",
@@ -29,33 +34,40 @@ export default function SignupPage() {
             console.log(userDetails, ">>>> userdetail");
 
             const isUserExists = login.allUsers.find(val => {
-                if(val.username.toLowerCase() == userDetails.username.toLowerCase()){
-                    alert("Username already exists");
-                } else if(val.email.toLowerCase() == userDetails.email.toLowerCase()){
-                    alert("Email already exists");
-                } else {
-                    login.setAllUsers([...login.allUsers, userDetails])
-
-                    setUserDetails({
-                        username: "",
-                        firstname: "",
-                        lastname: "",
-                        email: "",
-                        location: "",
-                        password: ""
-                    })
-
-                    login.setLoginUser(true);
-                    navigate("/login")
-                    alert("Account created successfully !!  ")
-                }
+                return val.username == userDetails.username
             });
 
-            if(isUserExists)
+            const isEmailExists =  login.allUsers.find(val => {
+                    return val.email == userDetails.email
+            });
+
+            if(!isUserExists && !isEmailExists){
+                console.log("entered wronggg");
+                login.setAllUsers([...login.allUsers, userDetails])
+
+                setUserDetails({
+                    username: "",
+                    firstname: "",
+                    lastname: "",
+                    email: "",
+                    location: "",
+                    password: ""
+                })
+
+                navigate("/login", {state:{from:[currentPath]}});
+            } else {
+                if(isUserExists){
+                    toast.error("Username already taken!")
+                }
+                if(isEmailExists){
+                    toast.error("Email already exists!")
+                }
+            }
             console.log(isUserExists, ">>>>isUserExists");
+            console.log(isEmailExists, ">>>>isEmailExists");
 
         } else{
-            alert("All fields are mandatory")
+            toast.warning("All fields are mandatory to fill !!")
         }
     }
 
@@ -78,6 +90,8 @@ export default function SignupPage() {
                     <small>Already have an account? <Link to="/login">Login</Link></small>
                 </div>
             </div>
+
+            <ToastContainer />
         </div>
     )
 }
