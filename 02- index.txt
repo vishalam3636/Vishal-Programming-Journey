@@ -348,3 +348,14 @@
 
 
                                                         🔴 Still have to show notification when user signs out.
+
+
+📅 01-02-2024
+              📁(08- Mixed Practice Projects)
+                                   👉🏾 07- Context API Practices
+                                          👉🏾 01-Context API Practice-1
+                                                        🖊️ Updated files for displaying successful signout notification
+                                                        🖊️ used useLocation location to get the state which we have passed when navigating from any oage to signin page.
+                                                        🖊️ We are setting current path in state of useNavigate when user is clicking logout, and since logout button is displayed only when user is logged in, so doesnt matter user is loggin out from which page, it will set that pages path in state.
+                                                        🖊️ Then in login page, we are checking if there is any value in from key in state, if there is any then display successful logout notification and then empty the location.state.from. 
+                                                        So when move from here and there it doesnt cath the from value and display the notification everytime.
