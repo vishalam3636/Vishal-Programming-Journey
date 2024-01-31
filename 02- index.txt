@@ -312,8 +312,39 @@
 
 
 📅 29-01-2024
-            📁(08- Mixed Practice Projects)
+              📁(08- Mixed Practice Projects)
                                    👉🏾 06- Firebase Correct Way using
-                                   🖊️ We have used Context API for it.
-                                   📝 Made a "firebase.js" file, theres aprovider and we have wrapped the provider around app in index.js file
-                                   🖊️ Used example of createUserWithEmailAndPassword and Firebase's Realtime Database.
+                                          🖊️ We have used Context API for it.
+                                          📝 Made a "firebase.js" file, theres aprovider and we have wrapped the provider around app in index.js file
+                                          🖊️ Used example of createUserWithEmailAndPassword and Firebase's Realtime Database.
+
+
+📅 30-01-2024
+              📁(08- Mixed Practice Projects)
+                                   👉🏾 07- Context API Practices
+                                          👉🏾 01-Context API Practice-1
+                                                 🖊️ Practicing React Context API
+                                                 🖊️ Made a simple signup and login page
+                                                 🖊️ When user is successfully loggin-in, saving users basic credential in login Context and later using it as per out need.
+                                                 🖊️ Like in this simple project I have stored user details and displaying in profile-page
+                                                 🖊️ The user details can be accessed throughout the project using useContext hook, because we have wrapped the app in login context.
+                                                 🖊️ A signup functionality is also given, and user when successfully logs in, the user data is getting saved in login context
+
+
+📅 31-01-2024
+              📁(08- Mixed Practice Projects)
+                                   👉🏾 07- Context API Practices
+                                          👉🏾 01-Context API Practice-1
+                                                 🖊️ Installed react-toastify package to display success, error and warning notifications
+                                                 🖊️ Few changes in functionality is also done.
+                                                 🖊️ Major Challenge done here is displaying notification when user is successfully creating account or successfully loggin-in.
+                                                 Because when we are successfully loggin-in or creating account, the page changes and so even though we are toasting the notification, because of page is changing the notification doesn't get displayed. 
+                                                 🖊️ So dispalying notification in the next page when user successfully logs in or creates account. 
+                                                 We are checking for users previous page where the user is getting redirected from.
+                                                 📝 E.g;
+                                                        In case of successful login, the user redirected from login page to profile-page, so in profile page we are checking users previous page and displaying notification.
+
+                                                        In case of successful account creation, the user redirected from signup page to login-page, so in login page we are checking users previous page and displaying notification.
+
+
+                                                        🔴 Still have to show notification when user signs out.
