@@ -1,0 +1,49 @@
+.navbar-container {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+.navbar-container .left h2 {
+    border: 1px solid white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.navbar-container ul{
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.right button {
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar-container ul li{
+    background-color: transparent;
+}
+
+.navbar-container ul a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid lightgrey;
+    padding: 10px 20px;
+}
+
+.navbar-container ul a.active{
+    background-color: crimson;
+}
