@@ -16,6 +16,7 @@ export default function LoginPage() {
   const currentPath = location.pathname;
 
   useEffect(() => {
+    console.log(location.state, ">>>>location in signInPage");
     let prevPath = location?.state?.from[0];
     console.log(prevPath, ">>prevPath in useEffect of loginPage");
 
@@ -24,6 +25,10 @@ export default function LoginPage() {
       location.state.from.pop();
 
       console.log(location, ">>location after pop");
+    } else if (prevPath?.length > 0) {
+      toast.success("Successfully signout!!");
+      location?.state?.from?.pop();
+      console.log(location, ">>location ka state ka from emptying");
     }
   }, []);
 
