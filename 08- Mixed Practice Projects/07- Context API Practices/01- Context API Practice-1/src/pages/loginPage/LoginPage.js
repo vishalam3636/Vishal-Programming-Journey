@@ -1,6 +1,9 @@
 import "./loginpage.css";
-import React, {useState} from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, {useState, useEffect} from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+
+// toastify
+import { ToastContainer, toast } from 'react-toastify';
 
 // login context
 import { useLogin } from "../../contexts/LoginContext";
@@ -9,6 +12,20 @@ export default function LoginPage() {
     const login = useLogin();
 
     const navigate= useNavigate();
+    const location = useLocation();
+    const currentPath = location.pathname;
+
+    useEffect(()=>{
+        let prevPath = location?.state?.from[0]
+        console.log(prevPath, ">>prevPath in useEffect of loginPage");
+
+        if(prevPath == "/signup"){
+            toast.success("Account created successfully !!");
+            location.state.from.pop();
+
+            console.log(location, ">>location after pop");
+        }
+    }, [])
 
     const [loginCred, setLoginCred] = useState({
         username: "",
@@ -25,17 +42,17 @@ export default function LoginPage() {
 
             if(isUserExists) {
                 if(isUserExists.password == loginCred.password.trim()){
-                    alert("Succesful login !!");
-                    navigate("/profile-page");
+                    toast.success("Succesful login !!");
+                    navigate("/profile-page", { state: { from: [currentPath] } });
                     login.setLoginUser(isUserExists);
                 } else {
-                    alert("Incorrect password !!")
+                    toast.error("Incorrect password !!")
                 }
             } else{
-                alert("User not found!!")
+                toast.error("User not found!!")
             }
         } else{
-            alert("All fields are mandatory !")
+            toast.warning("All fields are mandatory !")
         }
     }
 
@@ -55,6 +72,8 @@ export default function LoginPage() {
                 </div>
 
             </div>
+
+            <ToastContainer />
         </div>
     )
 }
