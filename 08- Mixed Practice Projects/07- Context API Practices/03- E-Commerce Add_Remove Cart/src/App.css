@@ -72,6 +72,12 @@ html, body, #root, .App {
 .main-page {
   background-color: orange;
   width: 100%;
-  height: calc(100% - 60px);;
+  height: 100%;
   padding: 20px;
+}
+
+.encapsulation-component {
+  width: 100%;
+  height: calc(100% - 60px);
+  background-color: magenta;
 }

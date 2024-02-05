@@ -38,11 +38,18 @@ Day-1: (04-02-2024)
    👉🏾 Signup Form
 
 2. Customers:
+   . timeline page
    👉🏾 It'll have default display items according to categories
+   . Search Field Component (not created yet)
    👉🏾 A Search Field at top to search for items in the whole website
+   . profile Page
+   👉🏾 Customers Profile Page
 
 3. Admin User:
+   . Users handling Page
    👉🏾 A dashboard to handle users
    👉🏾 Handle is basically, delete user, block or unblock user
+   . Admin Profile Page
+   👉🏾 Admin ProfilePage
 
 📝 NOTE: WE CAN MAKE A SINGLE HOMEPAGE COMMON FOR PUBLIC AND CUSTOMER, WHERE THE DEFAULT ITEMS WILL GET DISPLAYED ACCORDING TO CATEGORIES, It's JUST AN IDEA NOW.
