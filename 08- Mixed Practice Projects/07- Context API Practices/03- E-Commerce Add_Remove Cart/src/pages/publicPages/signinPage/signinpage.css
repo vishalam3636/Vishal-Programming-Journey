@@ -1,0 +1,89 @@
+.signin-page {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../../public/media_files/images/login-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.signin-page .form-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    /* very important to set a max-width on flex container */
+    max-width: 500px;
+    width: 100%;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.signin-page .form-container h3 {
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    width: max-content;
+    padding: 3px 20px;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap3
+    ;
+}
+
+
+.signin-page .form-container .field-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+
+.signin-page .form-container .field-container label{
+    font-size:20px;
+    font-weight: 600;
+}
+
+.signin-page .form-container .field-container input{
+    height: 40px;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+
+.signin-page .form-container .captcha-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.signin-page .form-container .button-container{
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.signin-page .form-container .button-container button {
+    padding: 8px 30px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.4;
+}
+
+.signin-page .form-container .button-container button:hover {
+    background-color: crimson;
+    color: #fff;
+}
+

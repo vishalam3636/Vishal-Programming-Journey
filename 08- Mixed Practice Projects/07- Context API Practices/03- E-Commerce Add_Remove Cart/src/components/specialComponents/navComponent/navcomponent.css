@@ -1,0 +1,58 @@
+.nav-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.nav-component .left {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px;
+}
+
+.nav-component .left h2 {
+    cursor: pointer;
+}
+
+
+.nav-component .center {
+    border: 1px solid #fff;
+    
+}
+
+
+.nav-component .right {
+    /* border: 1px solid #fff; */
+    display: flex;
+    padding: 0px 30px
+}
+
+.nav-component .right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-component .right ul li {
+    /* border: 1px solid red; */
+    margin: 5px;
+    background-color: transparent;
+}
+
+.nav-component .right ul a {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 19px;
+    transition: all 0.4s;
+    border-radius: 3px;
+}
+
+.nav-component .right ul a:hover {
+    background-color: crimson;
+    color: #fff;
+}
+
