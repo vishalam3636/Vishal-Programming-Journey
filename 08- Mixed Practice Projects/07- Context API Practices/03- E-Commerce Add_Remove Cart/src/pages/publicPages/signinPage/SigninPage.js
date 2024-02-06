@@ -1,7 +1,18 @@
 import "./signinpage.css";
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
+import { useLogin } from "../../../contexts/itemsContext/LoginContext";
 
 export default function SignInPage() {
+  const loginContextVals = useLogin();
+
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    loginContextVals.setIsLogin(true);
+    navigate("/timeline");
+  };
   return (
     <div className="signin-page main-page">
       <div className="form-container">
@@ -19,7 +30,7 @@ export default function SignInPage() {
           <h1>XXXXXX</h1>
         </div>
         <div className="button-container">
-          <button>Sign In</button>
+          <button onClick={handleLogin}>Sign In</button>
         </div>
       </div>
     </div>

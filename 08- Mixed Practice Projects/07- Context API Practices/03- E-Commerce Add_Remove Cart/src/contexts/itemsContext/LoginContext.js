@@ -10,7 +10,12 @@ export const LoginContextProvider = (props) => {
 
   return (
     <LoginContext.Provider
-      value={{ logins: isLogin, userDetail: [userDetails] }}
+      value={{
+        logins: isLogin,
+        userDetail: [userDetails],
+        setIsLogin,
+        setUserDetails,
+      }}
     >
       {props.children}
     </LoginContext.Provider>
