@@ -29,7 +29,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavComponent />
         <Routes>
           {/* Public Accessable Pages */}
           <Route

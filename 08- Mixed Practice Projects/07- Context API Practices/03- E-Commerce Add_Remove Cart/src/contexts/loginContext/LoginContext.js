@@ -6,6 +6,8 @@ export const useLogin = () => useContext(LoginContext);
 
 export const LoginContextProvider = (props) => {
   const [isLogin, setIsLogin] = useState(false);
+  const [userType, setUserType] = useState("user");
+
   const [userDetails, setUserDetails] = useState(null);
 
   return (
@@ -15,6 +17,8 @@ export const LoginContextProvider = (props) => {
         userDetail: [userDetails],
         setIsLogin,
         setUserDetails,
+        userType,
+        setUserType,
       }}
     >
       {props.children}

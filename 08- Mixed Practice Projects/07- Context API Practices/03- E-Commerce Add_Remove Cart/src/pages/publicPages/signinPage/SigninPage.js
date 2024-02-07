@@ -1,17 +1,25 @@
 import "./signinpage.css";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { useLogin } from "../../../contexts/itemsContext/LoginContext";
+import { useLogin } from "../../../contexts/loginContext/LoginContext";
 
 export default function SignInPage() {
+  const [selectedType, setSelectedType] = useState(null);
+
   const loginContextVals = useLogin();
 
   const navigate = useNavigate();
 
   const handleLogin = () => {
     loginContextVals.setIsLogin(true);
+    loginContextVals.setUserType(selectedType);
     navigate("/timeline");
+  };
+
+  const handleCheckClick = (e) => {
+    console.log(e.target.value, "check value");
+    setSelectedType(e.target.value);
   };
   return (
     <div className="signin-page main-page">
@@ -28,6 +36,34 @@ export default function SignInPage() {
         </div>
         <div className="captcha-container">
           <h1>XXXXXX</h1>
+        </div>
+        <div>
+          <input
+            onClick={handleCheckClick}
+            type="radio"
+            id="public"
+            name="user_type"
+            value="public"
+          />
+           <label for="public">Public</label>
+          <br />
+          <input
+            onClick={handleCheckClick}
+            type="radio"
+            id="user"
+            name="user_type"
+            value="user"
+          />
+            <label for="user">User</label>
+          <br />
+          <input
+            onClick={handleCheckClick}
+            type="radio"
+            id="admin"
+            name="user_type"
+            value="admin"
+          />
+            <label for="admin">Admin</label>
         </div>
         <div className="button-container">
           <button onClick={handleLogin}>Sign In</button>
