@@ -1,22 +1,24 @@
 import "./publicencapsulation.css";
 import React, { useState, useEffect } from "react";
 
-import { useLogin } from "../../../contexts/itemsContext/LoginContext";
+import { useLogin } from "../../../contexts/loginContext/LoginContext";
+
 import { useNavigate } from "react-router-dom";
+
+import NavComponent from "../../specialComponents/navComponent/NavComponent";
 
 export default function PublicEncapsulation({ children }) {
   const navigate = useNavigate();
 
-  const [checkLogin, setCheckLogin] = useState();
-
   const loginContextVals = useLogin();
 
   useEffect(() => {
-    setCheckLogin(loginContextVals.logins);
-    if (!loginContextVals.logins) {
-      navigate("/sign-in");
-    } else if (loginContextVals.logins) {
-      navigate("/timeline");
+    if (loginContextVals.logins) {
+      if (loginContextVals.userType === "admin") {
+        navigate("/customer-handling");
+      } else if (loginContextVals.userType === "user") {
+        navigate("/timeline");
+      }
     }
   }, []);
 
@@ -25,8 +27,15 @@ export default function PublicEncapsulation({ children }) {
     ">>>>>>>>loginContextVals in public encaps comp"
   );
   return (
-    <div className="encapsulation-component public-encapsulation">
-      {checkLogin ? { children } : ""}
-    </div>
+    <>
+      <NavComponent />
+      <div className="encapsulation-component public-encapsulation">
+        {!loginContextVals.logins ? (
+          children
+        ) : (
+          <h1>You dont have access this page</h1>
+        )}
+      </div>
+    </>
   );
 }

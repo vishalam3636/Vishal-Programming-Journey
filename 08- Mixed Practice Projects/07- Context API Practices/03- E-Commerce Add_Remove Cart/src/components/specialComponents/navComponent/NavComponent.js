@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import { NavLink, useNavigate } from "react-router-dom";
 
-import { useLogin } from "../../../contexts/itemsContext/LoginContext";
+import { useLogin } from "../../../contexts/loginContext/LoginContext";
 
 export default function NavComponent() {
   const navigate = useNavigate();
@@ -15,6 +15,11 @@ export default function NavComponent() {
   useEffect(() => {
     setCheckLogin(loginContextVals.logins);
   }, []);
+
+  const handleLogout = () => {
+    loginContextVals.setIsLogin(false);
+    navigate("/sign-in");
+  };
 
   return (
     <div className="nav-component">
@@ -45,7 +50,7 @@ export default function NavComponent() {
               {!checkLogin ? (
                 <NavLink to={"/sign-in"}>Sign In</NavLink>
               ) : (
-                <button>Logout</button>
+                <button onClick={handleLogout}>Logout</button>
               )}
             </li>
           </ul>
