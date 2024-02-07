@@ -17,8 +17,48 @@
 
 
 .nav-component .center {
-    border: 1px solid #fff;
+    /* background-color: magenta; */
+    /* border: 1px solid #fff; */
     color: #fff;
+
+    display: flex;
+    gap: 10px;
+}
+
+.nav-component .center ul {
+    /* background-color: magenta; */
+    /* border: 1px solid #fff; */
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-component .center ul li{
+    list-style: none;
+    margin: 4px;
+}
+
+.nav-component .center ul li a{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 19px;
+    transition: all 0.4s;
+    border-radius: 3px;
+}
+
+.nav-component .center ul li a:hover{
+    background-color: crimson;
+}
+
+.nav-component .center ul li a.active{
+    background-color: #7e7c7c;
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 

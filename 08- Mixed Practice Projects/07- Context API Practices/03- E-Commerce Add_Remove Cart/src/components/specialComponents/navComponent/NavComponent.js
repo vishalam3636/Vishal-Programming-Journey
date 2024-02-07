@@ -18,19 +18,56 @@ export default function NavComponent() {
 
   const handleLogout = () => {
     loginContextVals.setIsLogin(false);
+    loginContextVals.setUserType("public");
     navigate("/sign-in");
+  };
+
+  const handleLogoClick = () => {
+    if (loginContextVals.userType === "admin") {
+      navigate("/customer-handling");
+    } else if (loginContextVals.userType === "user") {
+      navigate("/timeline");
+    } else {
+      navigate("/sign-in");
+      loginContextVals.setUserType("public");
+      loginContextVals.setIsLogin(false);
+    }
   };
 
   return (
     <div className="nav-component">
       <div className="left">
-        <h2 onClick={() => navigate("/")}>E-Commerce</h2>
+        <h2 onClick={handleLogoClick}>E-Commerce</h2>
       </div>
 
       {/* Menu Items When user is Logged in*/}
       {checkLogin ? (
         <div className="center">
-          <h2>Yoo</h2>
+          {/* Admin Ul */}
+          {loginContextVals.userType == "admin" ? (
+            <ul>
+              <li>
+                <NavLink to={"/admin-profile"}>Admin Profile</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/customer-handling"}>Customers</NavLink>
+              </li>
+            </ul>
+          ) : loginContextVals.userType == "user" ? (
+            <ul>
+              <li>
+                <NavLink to={"/cart"}>Cart</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/user-profile"}>My Profile</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/timeline"}>Timeline</NavLink>
+              </li>
+            </ul>
+          ) : (
+            ""
+          )}
         </div>
       ) : (
         ""
@@ -38,22 +75,20 @@ export default function NavComponent() {
 
       <div className="right">
         <ul>
-          <ul>
-            {!checkLogin ? (
-              <li>
-                <NavLink to={"/"}>Home</NavLink>
-              </li>
-            ) : (
-              ""
-            )}
+          {!checkLogin ? (
             <li>
-              {!checkLogin ? (
-                <NavLink to={"/sign-in"}>Sign In</NavLink>
-              ) : (
-                <button onClick={handleLogout}>Logout</button>
-              )}
+              <NavLink to={"/"}>Home</NavLink>
             </li>
-          </ul>
+          ) : (
+            ""
+          )}
+          <li>
+            {!checkLogin ? (
+              <NavLink to={"/sign-in"}>Sign In</NavLink>
+            ) : (
+              <button onClick={handleLogout}>Logout</button>
+            )}
+          </li>
         </ul>
       </div>
     </div>

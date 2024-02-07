@@ -19,6 +19,11 @@ export default function PublicEncapsulation({ children }) {
       } else if (loginContextVals.userType === "user") {
         navigate("/timeline");
       }
+    } else {
+      setTimeout(() => {
+        navigate("/sign-in");
+        loginContextVals.setUserType("public");
+      }, 2000);
     }
   }, []);
 
