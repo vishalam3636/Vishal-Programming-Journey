@@ -12,13 +12,12 @@ export default function UserEncapsulation({ children }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // if (!loginContextVals.logins) {
-    //   setTimeout(() => {
-    //     navigate("/sign-in");
-    //     loginContextVals.setUserType("public");
-    //   }, 2000);
-    // } else
-    if (loginContextVals.logins) {
+    if (!loginContextVals.logins) {
+      setTimeout(() => {
+        navigate("/sign-in");
+        loginContextVals.setUserType("public");
+      }, 2000);
+    } else if (loginContextVals.logins) {
       if (loginContextVals.userType === "admin") {
         navigate("/customer-handling");
       } else if (loginContextVals.userType === "user") {

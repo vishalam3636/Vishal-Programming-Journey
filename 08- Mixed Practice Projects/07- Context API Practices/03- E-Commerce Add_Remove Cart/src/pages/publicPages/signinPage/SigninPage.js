@@ -12,9 +12,13 @@ export default function SignInPage() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    loginContextVals.setIsLogin(true);
-    loginContextVals.setUserType(selectedType);
-    navigate("/timeline");
+    if (selectedType) {
+      loginContextVals.setIsLogin(true);
+      loginContextVals.setUserType(selectedType);
+      navigate("/timeline");
+    } else {
+      alert("Mandatory to select user type !!");
+    }
   };
 
   const handleCheckClick = (e) => {
@@ -38,14 +42,14 @@ export default function SignInPage() {
           <h1>XXXXXX</h1>
         </div>
         <div>
-          <input
+          {/* <input
             onClick={handleCheckClick}
             type="radio"
             id="public"
             name="user_type"
             value="public"
           />
-           <label for="public">Public</label>
+           <label for="public">Public</label> */}
           <br />
           <input
             onClick={handleCheckClick}
