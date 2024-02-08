@@ -359,3 +359,41 @@
                                                         🖊️ We are setting current path in state of useNavigate when user is clicking logout, and since logout button is displayed only when user is logged in, so doesnt matter user is loggin out from which page, it will set that pages path in state.
                                                         🖊️ Then in login page, we are checking if there is any value in from key in state, if there is any then display successful logout notification and then empty the location.state.from. 
                                                         So when move from here and there it doesnt cath the from value and display the notification everytime.
+
+
+📅 04-02-2024
+              📁(08- Mixed Practice Projects)
+                                   👉🏾 07- Context API Practices
+                                          👉🏾 02- context-api display name in nested "d" component
+                                                        🖊️ In this Context API, i have made a parent component and there are children components.
+                                                        🖊️ The idea is to display "Vishal" in nested-D component without using the props.
+                                                        🖊️ Component-A is parent component and Component-B, Component-C and Component-D are children components.
+                                                        🖊️ NameContext.js is the context file where we have written code for NameContext
+                                                        💡 The idea behind using Context-API is,
+                                                        We made a context provider using "createContext" and then wrap that provider around the parent
+                                                        Next with the help of useContext we use the values which are passed in provider
+
+
+📅 04-02-2024
+📅 05-02-2024
+📅 06-02-2024
+📅 07-02-2024
+📅 08-02-2024
+              📁(08- Mixed Practice Projects)
+                                   👉🏾 07- Context API Practices
+                                          👉🏾 03- E-Commerce Add_Remove Cart
+                                                 🖊️ This project is a project to practice Reacts Context API.
+                                                 💡 The Idea is creating a simple e-commerce website where-
+                                                        🖊️ User can signin, signup
+                                                        🖊️ Customer can add to cart and remove from cart and proceed for checkout
+
+                                                        💡 For protected routing, i'll be using encapsulating component concept.
+                                                        🖊️ Encapsulating pages in the respective user type encapsulating components.
+
+                                                 📝 Upto this date, differnt user types pages has been created and is encapsulated under their respective encapsulating components.
+                                                 📝 Logic for redirecting has also been given in encapsulating components.
+                                                 no different user type will be able to access different users pages.
+                                                 E.g; 
+                                                        ✒️ public userType wont be able to access admin and user pages
+                                                        ✒️ user userType wont be able to access admin and public pages
+                                                        ✒️ admin userType wont be able to access user and public pages
