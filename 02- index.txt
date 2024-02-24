@@ -397,3 +397,39 @@
                                                         ✒️ public userType wont be able to access admin and user pages
                                                         ✒️ user userType wont be able to access admin and public pages
                                                         ✒️ admin userType wont be able to access user and public pages
+
+
+📅 24-02-2024
+              📁(08- Mixed Practice Projects)
+                                   👉🏾 08- Firebase Google Authentication
+                                          🖊️ Made a simple page for signin-up using firebases google auth
+                                          📝 We just have to first initialize the firebase in our application-
+                                          To Initialize Firebase in Our App-
+                                                 import { initializeApp } from "firebase/app";
+                                                 // Your web app's Firebase configuration
+                                                 const firebaseConfig = {
+                                                 apiKey: "XXXaSyC79QfVQkRTjYSwDdLcZeu58Z6-_Xnvxxx",
+                                                 authDomain: "fir-project-75d14.firebaseapp.com",
+                                                 databaseURL: "https://fir-project-75d-XX-rtdb.firebaseio.com",
+                                                 projectId: "fir-project-75dXX",
+                                                 storageBucket: "fir-project-75d14.appspot.com",
+                                                 messagingSenderId: "4933340013XX",
+                                                 appId: "1:493334001379:web:7b1b8dd6f34cc9c236f7XX",
+                                                 };
+
+                                                 const firebaseApp = initializeApp(firebaseConfig);
+
+                                          📝 Using firebase google auth for signing-up, we just have to import few stuffs from firebase.
+                                                 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
+                                                 const auth = getAuth(firebaseApp);
+                                                 const provider = new GoogleAuthProvider();
+
+                                                 const signupWithGoogle = () => {
+                                                        signInWithPopup(auth, provider);
+                                                 };
+
+
+                                                 I have implemented this using reacts Context API, basically created a firebase context for firebase instances and methods.
+
+
