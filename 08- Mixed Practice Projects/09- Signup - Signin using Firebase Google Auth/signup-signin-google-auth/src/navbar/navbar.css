@@ -1,0 +1,47 @@
+.navbar-component {
+    background-color: lightgrey;
+    width: 100%;
+}
+
+.navbar-component ul {
+    list-style: none;
+    background-color: aqua;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.navbar-component li {
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.navbar-component li a {
+    background-color: #fff;
+    border: 1px solid black;
+    color: #000;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+
+.navbar-component li a:hover {
+    background-color: crimson;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.navbar-component li a:active {
+    background-color: crimson;
+}
+
+
+.navbar-component button {
+    padding: 10px 15px;
+}
