@@ -433,3 +433,29 @@
                                                  I have implemented this using reacts Context API, basically created a firebase context for firebase instances and methods.
 
 
+
+
+
+📅 24-02-2024
+              📁(08- Mixed Practice Projects)
+                                   👉🏾 09- Signup-Signin Using Firebase Google Auth
+
+                                   📓📓📓📓 For To Make A Context API (A QUICK REVISION) 📓📓📓📓
+
+                                   import { createContext, useContext } from "react";
+
+                                   // Creating Context
+                                   const FirebaseContext = createContext(null);
+
+                                   // custom hook for using firebase conext, this will be imported wherever we need the context vals
+                                   export const useFirebase = () => useContext(FirebaseContext);
+                                   
+                                   // Contxt Provider, this will be wrapped around the parent, in our case its wrapped around <App /> in index.js file
+                                   export const FirebaseProvider = (props) => {
+                                          return (
+                                                 <FirebaseContext.Provider value={{ name: "Vishal" }}>
+                                                 {props.children}
+                                                 </FirebaseContext.Provider>
+                                          );
+                                   };
+                                   📓📓📓📓📓📓📓📓📓 Context Is Created 📓📓📓📓📓📓📓📓📓 
