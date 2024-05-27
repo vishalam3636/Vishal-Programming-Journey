@@ -1,0 +1,62 @@
+.signuppage {
+    /* background-color: lightcoral; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .signuppage .signupcontainer {
+    /* this width 100% help flex-tems to work with max-width */
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid grey;
+    padding: 15px;
+  }
+  
+  .signupcontainer h2 {
+    background-color: lightgray;
+    width: max-content;
+    margin: 30px auto;
+  }
+  
+  .signupcontainer .fieldcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .signupcontainer .fieldcontainer input {
+    height: 35px;
+    padding: 2px 10px;
+  }
+  
+  .signupcontainer .submitcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .signupcontainer .submitcontainer button {
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+  }
+  
+  .signupcontainer .submitcontainer small {
+    color: black;
+    font-size: 15px;
+  }
+  
+  .signupcontainer .submitcontainer span {
+    color: blue;
+    cursor: pointer;
+  }
+  

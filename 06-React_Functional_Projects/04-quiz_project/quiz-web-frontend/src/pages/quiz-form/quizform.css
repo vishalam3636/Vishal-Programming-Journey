@@ -1,0 +1,11 @@
+.quiz-form-page {
+    background-color: lightgray;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz-form-page small {
+    cursor: pointer;
+}
