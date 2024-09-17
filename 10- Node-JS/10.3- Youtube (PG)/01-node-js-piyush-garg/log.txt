@@ -1,0 +1,27 @@
+1726221313544: GET: /api/users
+1726221359644: GET: /api/users 
+1726221399131: GET: /api/users 
+
+1726221435958: GET: /api/users 
+
+1726221439696: GET: /api/users 
+
+1726221457555: GET: /api/users/4 
+
+1726221493502: GET: /api/users/4 
+
+1726223516666: POST: /api/users 
+
+1726223534647: GET: /api/users/1001 
+
+1726223974364: POST: /api/users 
+
+1726223985507: GET: /api/users 
+
+1726223993403: POST: /api/users 
+
+1726223998035: GET: /api/users 
+
+1726224045438: POST: /api/users 
+
+1726224539667: GET: /api/users/3000 
