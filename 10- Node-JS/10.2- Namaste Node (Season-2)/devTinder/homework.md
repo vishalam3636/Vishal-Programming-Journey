@@ -38,3 +38,15 @@
 - Reading the query params in the routes
 - Reading the query params in the routes
 - Reading the dynamic routes
+
+<!-- HOMEWORK FROM EPISODE-05-->
+
+- Multiple route handlers and play with code
+- next();
+- next function and error along with res.send();
+- app.use("/", rH, [rH2, rH3], rH4, rH5 )
+- What is a middleware? Why do we need it?
+- How express JS basically handles requests behind the scenes
+- Difference app.use and use.all
+- Write a dummy Auth middleware for admin
+- Write a dummy Auth middleware for all user routes, except login (i.e; /user/login)
