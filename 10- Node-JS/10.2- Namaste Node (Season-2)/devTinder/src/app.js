@@ -2,30 +2,22 @@ const express = require("express");
 const app = express();
 const PORT = 8000;
 
-const { adminAuth, userAuth } = require("./middlewares/auth");
-
-// Handle Auth Middleware for all GET, POST, PUT, DELETE, PATCH... requests
-app.use("/admin", adminAuth);
-
-//============== Admin routes handler ==============//
-app.get("/admin/getAllData", (req, res) => {
-  // logic of checking if the request is authorized
-  res.send("All data sent");
+app.get("/getUserData", (req, res) => {
+  // Logic of DB call and get user data
+  try {
+    throw new Error("some random error");
+    res.send("User data sent");
+  } catch (err) {
+    res.status(500).send("Some error occured, contact support team");
+  }
 });
 
-app.delete("/admin/getAllData", (req, res) => {
-  res.send("Delete a user");
-});
-
-//============== User routes handler ==============//
-app.get("/user", userAuth, (req, res) => {
-  // logic of checking if the request is authorized
-  res.send("All user data sent");
-});
-
-// it doesnt require token so, Auth notm required
-app.post("/user/login", (req, res) => {
-  res.send("User logged in successfully");
+// This will handle all the error, which isnt caught above
+app.use("/", (err, req, res, next) => {
+  if (err) {
+    // Log error message
+    res.status(500).send("something went wrong");
+  }
 });
 
 app.listen(PORT, () => {
