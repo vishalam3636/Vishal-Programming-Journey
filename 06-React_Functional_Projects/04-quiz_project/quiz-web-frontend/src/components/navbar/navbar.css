@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #000;
+    /* color: #fff; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar .left a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .right{
+    /* background-color: yellow; */
+}
+
+.navbar .right ul{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.navbar .right ul li{
+    background-color: transparent;
+    padding: 15px 30px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.navbar .right ul a{
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.navbar .right ul a.active{
+    background-color: crimson;
+    text-decoration: none;
+    color: #fff;
+}
+
