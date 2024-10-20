@@ -1,8 +1,8 @@
 // require("./sum");
 
-const obj = require("./sum");
-const { calculateSum } = require("./sum"); //  in case of common js
-const { x } = require("./sum");
+const obj = require("./calculate/sum");
+const { calculateSum } = require("./calculate/sum"); //  in case of common js
+const { x } = require("./calculate/sum");
 
 // import calculateSum from "./sum.js"; // in case of mjs i.e; module js
 
