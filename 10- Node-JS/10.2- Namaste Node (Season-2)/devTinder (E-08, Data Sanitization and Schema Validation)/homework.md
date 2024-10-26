@@ -119,3 +119,8 @@ API- Get user by ID
 
 - Add API level validations on Patch request and signup post API
 - DATA SANITISATION: Add API validation for each field
+
+(part-2)
+
+- Install Validator
+- Explore Validator library functions and use validator functions for password, email and url
