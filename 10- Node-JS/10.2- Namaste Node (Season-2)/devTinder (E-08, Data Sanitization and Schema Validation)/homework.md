@@ -124,3 +124,4 @@ API- Get user by ID
 
 - Install Validator
 - Explore Validator library functions and use validator functions for password, email and url
+- NEVER IN YOUR LIFE TRUST req.body , AS IT MAY CONTAIN MALLICIOUS DATA WHICH CAN HARM YOUR APPLICATION
