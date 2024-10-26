@@ -106,9 +106,16 @@ API- Get user by ID
 
 <!-- HOMEWORK FROM EPISODE-8 -->
 
+(part-1)
+
 - Explore schematype options from the documentation
 - Add required, unique, lowercase, min, minlength, trim
 - Add default
 - Create a custom validate function for gender
 - Improve the DB Schema- PUT all appropriate validations on each field in schema
 - Add timestamps to the userSchema
+
+(part-2)
+
+- Add API level validations on Patch request and signup post API
+- DATA SANITISATION: Add API validation for each field
