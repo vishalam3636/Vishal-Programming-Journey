@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const PORT = 8888;
 // import db connection
@@ -8,6 +9,7 @@ const BasicDetails = require("./models/basicDetails");
 
 // Middleware-
 app.use(express.json());
+app.use(cors());
 
 // Get An User
 app.get("/basicDetails/:id", async (req, res) => {
@@ -42,7 +44,7 @@ app.post("/signup", async (req, res) => {
     res.send(addedUser.toObject());
   } catch (err) {
     console.log("Error: " + err.message);
-    res.send("Failed to add user: " + err.message);
+    res.send(err.message);
   }
 });
 
@@ -87,7 +89,7 @@ app.patch("/basicDetails/:id", async (req, res) => {
       runValidators: true,
     });
 
-    res.send("Update a user under maintenance");
+    res.send(updatedUser);
   } catch (err) {
     res.send("Failed to update user: " + err.message);
   }
