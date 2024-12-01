@@ -50,7 +50,8 @@ function checkRotatedSorted(nums) {
 // console.log(checkRotatedSorted(nums));
 
 // Sol-3: (based on the same idea as above)
-var nums = [3, 4, 5, 1, 2];
+var nums = [3, 4, 5, 1, 2]; // true
+var nums = [7, 2, 3, 4, 5, 8]; // false
 
 function checkRotatedSortedOptimized(nums) {
   let count = 0;
