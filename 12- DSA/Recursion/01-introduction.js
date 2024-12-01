@@ -7,7 +7,7 @@ function sumArr(arr, i = 0, total = 0) {
   }
 
   if (i <= arr.length) {
-    return sumArr(arr, i++, (total += arr[i]));
+    return sumArr(arr, i + 1, (total += arr[i]));
   }
 }
 // console.log(sumArr(arr));
