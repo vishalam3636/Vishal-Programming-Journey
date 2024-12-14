@@ -6,7 +6,7 @@
  */
 
 // Parameterised Solution
-function calcSummission(i, sum = 0) {
+function calcSummissionParameterised(i, sum = 0) {
   if (i < 1) {
     console.log(sum);
     return;
@@ -15,6 +15,18 @@ function calcSummission(i, sum = 0) {
   sum = sum + i;
   i = i - 1;
 
-  calcSummission(i, sum);
+  calcSummissionParameterised(i, sum);
 }
-calcSummission(5);
+// calcSummissionParameterised(6);
+
+// Functional Solution
+function calcSummissionFunctional(i, sum = 0) {
+  console.log(i, ">>>i");
+
+  if (i <= 0) {
+    return 0;
+  }
+
+  return i + calcSummissionFunctional(i - 1);
+}
+console.log(calcSummissionFunctional(5));
