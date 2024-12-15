@@ -1,0 +1,16 @@
+{
+  "name": "nn-s2-e5-revision",
+  "version": "1.0.0",
+  "description": "namaste node season-2 episode-5 revision-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "vishal singh chauhan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.9"
+  }
+}
