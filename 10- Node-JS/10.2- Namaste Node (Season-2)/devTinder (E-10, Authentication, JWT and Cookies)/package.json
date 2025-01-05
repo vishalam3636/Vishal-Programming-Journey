@@ -1,0 +1,21 @@
+{
+  "name": "nn_s2e9_encryptingpasswords",
+  "version": "1.0.0",
+  "description": "namaste node s2 e9 encrypting passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "vishal singh chauhan",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.0",
+    "nodemon": "^3.1.9",
+    "validator": "^13.12.0"
+  }
+}
