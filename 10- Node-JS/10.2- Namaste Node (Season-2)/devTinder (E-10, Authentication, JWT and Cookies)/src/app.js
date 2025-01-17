@@ -6,6 +6,7 @@ const bcrypt = require("bcrypt");
 const validator = require("validator");
 const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
+const { userAuth } = require("./middlewares/auth");
 
 //=========== middlewares ============//
 app.use(express.json());
@@ -81,7 +82,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// user profile
+// user profile (without auth middleware)
 app.get("/profile", async (req, res) => {
   try {
     const cookies = req.cookies;
@@ -102,6 +103,16 @@ app.get("/profile", async (req, res) => {
       throw new Error("User does not exist");
     }
 
+    res.send(user);
+  } catch (err) {
+    res.status(400).send("ERROR : " + err.message);
+  }
+});
+
+// user profile (with auth middleware)
+app.get("/profile", userAuth, async (req, res) => {
+  try {
+    const user = req.user;
     res.send(user);
   } catch (err) {
     res.status(400).send("ERROR : " + err.message);
