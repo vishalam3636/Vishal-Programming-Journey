@@ -6,6 +6,8 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
 
+const { userAuth } = require("./middlewares/auth");
+
 // models
 const { User } = require("./models/user.model");
 
@@ -58,25 +60,10 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.get("/profile", async (req, res) => {
+app.get("/profile", userAuth, async (req, res) => {
   try {
-    let cookies = req.cookies;
-
-    let token = cookies.token;
-    if (!token) {
-      throw new Error(`Authentication failed !!!`);
-    }
-
-    let decryptToken = jwt.verify(token, "MAHADEV");
-    let userId = decryptToken._id;
-
-    const findUser = await User.findOne({ _id: userId });
-
-    if (!findUser) {
-      throw new Error("Profile not found !!");
-    } else {
-      res.send(findUser);
-    }
+    let profile = req.user;
+    res.send(profile);
   } catch (err) {
     res.status(401).send(`ERROR: ${err.message}`);
   }
