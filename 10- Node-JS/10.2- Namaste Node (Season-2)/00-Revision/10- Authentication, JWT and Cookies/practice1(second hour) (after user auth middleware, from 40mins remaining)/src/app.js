@@ -50,9 +50,12 @@ app.post("/login", async (req, res) => {
     if (!isPasswordValid) {
       res.send("Invalid Credentials !!");
     } else {
-      const token = jwt.sign({ _id: user._id }, "MAHADEV");
+      // const token = jwt.sign({ _id: user._id }, "MAHADEV", { expiresIn: "1m" }); // 1min
+      const token = jwt.sign({ _id: user._id }, "MAHADEV", { expiresIn: "1m" }); // 1hr
 
-      res.cookie("token", token);
+      // res.cookie("token", token, { expires: new Date(Date.now() + 50000) }); //50 seconds
+      res.cookie("token", token, { expires: new Date(Date.now() + 10000) }); //10 seconds
+
       res.send(user);
     }
   } catch (err) {
