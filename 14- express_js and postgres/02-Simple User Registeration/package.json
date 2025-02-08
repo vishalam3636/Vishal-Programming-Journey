@@ -1,0 +1,25 @@
+{
+  "name": "02-simple-user-registeration",
+  "version": "1.0.0",
+  "description": "connecting express application with local database (postgres)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [
+    "express.js",
+    "postgres",
+    "local",
+    "connecting"
+  ],
+  "author": "vishal singh chauhan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.9.0",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1"
+  }
+}
