@@ -162,3 +162,8 @@ API- Get user by ID
 - Create "routes" folder for managing auth, profile, request routers
 - Create authRouter, profileRouter, requestRouter
 - Import these routers in app.js
+
+- Create POST /logout API
+- Create PATCH /profile/edit API
+- Create a PATCH /profile/password API => forgot password API
+- MAKE SURE YOU VALIDATE ALL DATA IN POST PATCH API REQUESTs
