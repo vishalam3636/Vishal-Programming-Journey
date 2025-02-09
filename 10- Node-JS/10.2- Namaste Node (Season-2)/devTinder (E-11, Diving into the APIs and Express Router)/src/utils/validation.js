@@ -8,4 +8,13 @@ const validateEditProfileData = (req) => {
   return isEditAllowed;
 };
 
-module.exports = { validateEditProfileData };
+const validateEditPassword = (req) => {
+  const allowedPwdEditFields = ["oldPassword", "newPassword"];
+
+  const isEditAllowed = Object.keys(req.body).every((field) =>
+    allowedPwdEditFields.includes(field)
+  );
+  return isEditAllowed;
+};
+
+module.exports = { validateEditProfileData, validateEditPassword };
