@@ -34,12 +34,12 @@ authRouter.post("/login", async (req, res) => {
 
     const user = await User.findOne({ emailId: emailId });
     if (!user) {
-      req.send("Invalid Credentials");
+      throw new Error("Invalid Credentials");
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
-      res.send("Invalid Credentials !!");
+      throw new Error("Invalid Credentials !!");
     } else {
       const token = jwt.sign({ _id: user._id }, "MAHADEV");
 
@@ -48,6 +48,15 @@ authRouter.post("/login", async (req, res) => {
     }
   } catch (err) {
     res.send(`${err.message}`);
+  }
+});
+
+authRouter.post("/logout", (req, res) => {
+  try {
+    res.cookie("token", null, { expires: new Date(Date.now()) });
+    res.send();
+  } catch (err) {
+    res.send(err.message);
   }
 });
 
