@@ -16,6 +16,31 @@ let str = "Vishal";
 ///////////////////////////////////////////////////////////////////
 let arr = [1, 2, 3, 4, 5, 6];
 
+// Array Every polyfills
+Array.prototype.myEvery = function (userFn) {
+  const originalArr = this;
+
+  let result = true;
+  for (let i = 0; i < originalArr.length; i++) {
+    let userResult = userFn(originalArr[i]);
+    if (userResult === false) {
+      result = userResult;
+      break;
+    }
+  }
+
+  return result;
+};
+const everyResult = arr.every((elem) => {
+  return elem < 4;
+});
+console.log(everyResult, ">>>everyResult");
+
+const myEveryResult = arr.myEvery((elem) => {
+  return elem < 4;
+});
+console.log(myEveryResult, ">>>myEveryResult");
+
 // Array Length polyfills
 Array.prototype.myLength = function () {
   let originalArr = this;
