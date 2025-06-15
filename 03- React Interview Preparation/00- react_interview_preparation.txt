@@ -1,0 +1,22 @@
+React-
+What is React
+Virtual DOM vs Real DOM
+UseMemo and useCallback
+useState nd useEffect
+state management redux toolkit
+context API and prop drilling
+child component ke function ko parent component mein kaise access kr skte hain-
+    useImperative hook, ye prevRef and forwardRef dono deta hai
+How to optimize application performance-
+     reusable component, code splitting, useMemo, useCallback, memo, lazy loading
+How to use profiler
+useReducer
+5 hooks other than useState nd useEffect
+
+
+JS-
+let , var, const, hosting, closures, peromises, async await, event loop, throttling debouncing, 
+flat array problem, 
+remove duplicates,
+find the max, find second largest,
+target element (sum of two number)
