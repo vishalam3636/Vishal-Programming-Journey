@@ -188,7 +188,7 @@ function linearbackTrack(i, n) {
   console.log(i);
 }
 
-// linearbackTrack(5, 5);
+linearbackTrack(5, 5);
 
 // Problem-4: Print from n to 1 (but by backtrack)
 function printOppositeBacktrack(i, n) {
