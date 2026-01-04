@@ -11,6 +11,33 @@
 
 */
 
+
+
+// Sol-2
+function pattern7Sol2(n){
+  for(let i=1; i<=n; i++){
+    let str = "";
+
+    let spaceCount = n-i;
+    let starCount = 2*i-1;
+    let totalInRow = spaceCount + starCount;
+    
+    for(let j=1; j<=totalInRow; j++){
+      if(j<=spaceCount){
+        str+=" ";
+      }else{
+        str+="*"
+      }
+    }
+
+    console.log(str)
+  }
+}
+
+pattern7Sol2(5)
+
+
+// Sol-1
 function pattern7(n) {
   for (let i = 1; i <= n; i++) {
     let str = "";
@@ -27,7 +54,7 @@ function pattern7(n) {
   }
 }
 
-pattern7(5);
+// pattern7(5);
 
 // function pattern7(n) {
 //   for (let i = 1; i <= n; i++) {
