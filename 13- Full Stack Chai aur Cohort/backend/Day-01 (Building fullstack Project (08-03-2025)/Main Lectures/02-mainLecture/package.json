@@ -1,0 +1,20 @@
+{
+  "name": "02-mainlecture",
+  "version": "1.0.0",
+  "description": "main lecture learning second time, node js authentication",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "vishal chauhan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
