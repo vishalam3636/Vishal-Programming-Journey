@@ -1,0 +1,17 @@
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(1, 2));
+console.log(add("vishal", true));
+
+// JavaScript is a dynamically typed language, which means that the type of a variable can change at runtime. This can lead to unexpected behavior and bugs in our code. For example, in the above code, we are adding a string and a boolean, which will result in "vishaltrue". This is not what we intended and can cause issues in our application.
+
+// TypeScript is a statically typed language, which means that the type of a variable is determined at compile time. This allows us to catch type-related errors before we run our code, making it easier to write and maintain large applications. In TypeScript, we can specify the types of our variables and function parameters, which helps us avoid these kinds of issues. For example, we can define the add function in TypeScript like this:
+
+function printUser(userObj) {
+  console.log(userObj.fname[0]);
+  console.log(userObj.lname);
+}
+
+printUser({});

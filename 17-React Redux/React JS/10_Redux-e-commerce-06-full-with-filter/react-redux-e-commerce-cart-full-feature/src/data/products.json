@@ -1,0 +1,302 @@
+﻿[
+    {
+        "name":  "Essence Mascara Lash Princess",
+        "category":  "beauty",
+        "price":  9.99,
+        "discountPercentage":  10.48,
+        "stock":  99,
+        "image":  "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+        "id":  1
+    },
+    {
+        "name":  "Eyeshadow Palette with Mirror",
+        "category":  "beauty",
+        "price":  19.99,
+        "discountPercentage":  18.19,
+        "stock":  34,
+        "image":  "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+        "id":  2
+    },
+    {
+        "name":  "Powder Canister",
+        "category":  "beauty",
+        "price":  14.99,
+        "discountPercentage":  9.84,
+        "stock":  89,
+        "image":  "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+        "id":  3
+    },
+    {
+        "name":  "Red Lipstick",
+        "category":  "beauty",
+        "price":  12.99,
+        "discountPercentage":  12.16,
+        "stock":  91,
+        "image":  "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+        "id":  4
+    },
+    {
+        "name":  "Red Nail Polish",
+        "category":  "beauty",
+        "price":  8.99,
+        "discountPercentage":  11.44,
+        "stock":  79,
+        "image":  "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp",
+        "id":  5
+    },
+    {
+        "name":  "Calvin Klein CK One",
+        "category":  "fragrances",
+        "price":  49.99,
+        "discountPercentage":  1.89,
+        "stock":  29,
+        "image":  "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+        "id":  6
+    },
+    {
+        "name":  "Chanel Coco Noir Eau De",
+        "category":  "fragrances",
+        "price":  129.99,
+        "discountPercentage":  16.51,
+        "stock":  58,
+        "image":  "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+        "id":  7
+    },
+    {
+        "name":  "Dior J\u0027adore",
+        "category":  "fragrances",
+        "price":  89.99,
+        "discountPercentage":  14.72,
+        "stock":  98,
+        "image":  "https://cdn.dummyjson.com/product-images/fragrances/dior-j\u0027adore/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/fragrances/dior-j\u0027adore/thumbnail.webp",
+        "id":  8
+    },
+    {
+        "name":  "Dolce Shine Eau de",
+        "category":  "fragrances",
+        "price":  69.99,
+        "discountPercentage":  0.62,
+        "stock":  4,
+        "image":  "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+        "id":  9
+    },
+    {
+        "name":  "Gucci Bloom Eau de",
+        "category":  "fragrances",
+        "price":  79.99,
+        "discountPercentage":  14.39,
+        "stock":  91,
+        "image":  "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+        "id":  10
+    },
+    {
+        "name":  "Annibale Colombo Bed",
+        "category":  "furniture",
+        "price":  1899.99,
+        "discountPercentage":  8.57,
+        "stock":  88,
+        "image":  "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+        "id":  11
+    },
+    {
+        "name":  "Annibale Colombo Sofa",
+        "category":  "furniture",
+        "price":  2499.99,
+        "discountPercentage":  14.4,
+        "stock":  60,
+        "image":  "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+        "id":  12
+    },
+    {
+        "name":  "Bedside Table African Cherry",
+        "category":  "furniture",
+        "price":  299.99,
+        "discountPercentage":  19.09,
+        "stock":  64,
+        "image":  "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+        "id":  13
+    },
+    {
+        "name":  "Knoll Saarinen Executive Conference Chair",
+        "category":  "furniture",
+        "price":  499.99,
+        "discountPercentage":  2.01,
+        "stock":  26,
+        "image":  "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+        "id":  14
+    },
+    {
+        "name":  "Wooden Bathroom Sink With Mirror",
+        "category":  "furniture",
+        "price":  799.99,
+        "discountPercentage":  8.8,
+        "stock":  7,
+        "image":  "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+        "id":  15
+    },
+    {
+        "name":  "Apple",
+        "category":  "groceries",
+        "price":  1.99,
+        "discountPercentage":  12.62,
+        "stock":  8,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/apple/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp",
+        "id":  16
+    },
+    {
+        "name":  "Beef Steak",
+        "category":  "groceries",
+        "price":  12.99,
+        "discountPercentage":  9.61,
+        "stock":  86,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp",
+        "id":  17
+    },
+    {
+        "name":  "Cat Food",
+        "category":  "groceries",
+        "price":  8.99,
+        "discountPercentage":  9.58,
+        "stock":  46,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp",
+        "id":  18
+    },
+    {
+        "name":  "Chicken Meat",
+        "category":  "groceries",
+        "price":  9.99,
+        "discountPercentage":  13.7,
+        "stock":  97,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp",
+        "id":  19
+    },
+    {
+        "name":  "Cooking Oil",
+        "category":  "groceries",
+        "price":  4.99,
+        "discountPercentage":  9.33,
+        "stock":  10,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp",
+        "id":  20
+    },
+    {
+        "name":  "Cucumber",
+        "category":  "groceries",
+        "price":  1.49,
+        "discountPercentage":  0.16,
+        "stock":  84,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp",
+        "id":  21
+    },
+    {
+        "name":  "Dog Food",
+        "category":  "groceries",
+        "price":  10.99,
+        "discountPercentage":  10.27,
+        "stock":  71,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp",
+        "id":  22
+    },
+    {
+        "name":  "Eggs",
+        "category":  "groceries",
+        "price":  2.99,
+        "discountPercentage":  11.05,
+        "stock":  9,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp",
+        "id":  23
+    },
+    {
+        "name":  "Fish Steak",
+        "category":  "groceries",
+        "price":  14.99,
+        "discountPercentage":  4.23,
+        "stock":  74,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp",
+        "id":  24
+    },
+    {
+        "name":  "Green Bell Pepper",
+        "category":  "groceries",
+        "price":  1.29,
+        "discountPercentage":  0.16,
+        "stock":  33,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp",
+        "id":  25
+    },
+    {
+        "name":  "Green Chili Pepper",
+        "category":  "groceries",
+        "price":  0.99,
+        "discountPercentage":  1,
+        "stock":  3,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp",
+        "id":  26
+    },
+    {
+        "name":  "Honey Jar",
+        "category":  "groceries",
+        "price":  6.99,
+        "discountPercentage":  14.4,
+        "stock":  34,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp",
+        "id":  27
+    },
+    {
+        "name":  "Ice Cream",
+        "category":  "groceries",
+        "price":  5.49,
+        "discountPercentage":  8.69,
+        "stock":  27,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+        "id":  28
+    },
+    {
+        "name":  "Juice",
+        "category":  "groceries",
+        "price":  3.99,
+        "discountPercentage":  12.06,
+        "stock":  50,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp",
+        "id":  29
+    },
+    {
+        "name":  "Kiwi",
+        "category":  "groceries",
+        "price":  2.49,
+        "discountPercentage":  15.22,
+        "stock":  99,
+        "image":  "https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp",
+        "thumbnail":  "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp",
+        "id":  30
+    }
+]
