@@ -1,28 +1,24 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addToCart, decrementFromCart } from "../redux/cartSlice";
 import { decrementStock, incrementStock } from "../redux/productSlice.js";
-import ProductFilters from "../components/ProductFilters";
+import { addToCart, decrementFromCart } from "../redux/cartSlice.js";
 
 export default function Home() {
-  const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
-  const { cartItems } = useSelector((state) => state.cartItems);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("name");
   const [sortOrder, setSortOrder] = useState("asc");
+  const { cartItems, totalItem, totalPrice } = useSelector(
+    (state) => state.cartItems,
+  );
+  const dispatch = useDispatch();
 
-  const handleAddToCart = (item) => {
+  const handleAddTocart = (item) => {
     dispatch(addToCart(item));
     dispatch(decrementStock({ id: item.id, quantity: 1 }));
   };
 
-  const handleIncrement = (item) => {
-    dispatch(addToCart(item));
-    dispatch(decrementStock({ id: item.id, quantity: 1 }));
-  };
-
-  const handleDecrement = (item) => {
+  const handleDecrermentFromCart = (item) => {
     dispatch(decrementFromCart(item));
     dispatch(incrementStock({ id: item.id, quantity: 1 }));
   };
@@ -31,7 +27,7 @@ export default function Home() {
     const query = searchTerm.trim().toLowerCase();
 
     const filtered = products.filter((item) =>
-      (item.name || "").toLowerCase().includes(query),
+      (item.title || "").toLowerCase().includes(query),
     );
 
     const sorted = [...filtered].sort((a, b) => {
@@ -40,34 +36,42 @@ export default function Home() {
       if (sortBy === "price") {
         comparison = a.price - b.price;
       } else {
-        comparison = (a.name || "").localeCompare(b.name || "");
+        comparison = (a.title || "").localeCompare(b.title || "");
       }
 
       return sortOrder === "asc" ? comparison : -comparison;
     });
 
     return sorted;
-  }, [products, searchTerm, sortBy, sortOrder]);
+  }, [searchTerm, products, sortBy, sortOrder]);
 
   console.log(products, ">>>products in home");
+  console.log(cartItems, ">>>cartItems in home");
+  console.log(totalItem, ">>>total ite,m");
   return (
     <div className="home">
-      <ProductFilters
-        searchTerm={searchTerm}
-        onSearchChange={setSearchTerm}
-        sortBy={sortBy}
-        onSortByChange={setSortBy}
-        sortOrder={sortOrder}
-        onSortOrderChange={setSortOrder}
-        onReset={() => {
-          setSearchTerm("");
-          setSortBy("name");
-          setSortOrder("asc");
-        }}
-      />
+      <div>
+        <input
+          type="text"
+          placeholder="Find by title"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <select
+          value={searchCategory}
+          onChange={(e) => setSearchCategory(e.target.value)}
+        >
+          {categories.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <div className="productsList">
         {visibleProducts?.map((item) => {
-          const currProduct = cartItems.find((prod) => prod.id === item.id);
+          const currProduct = cartItems?.find((prod) => prod.id === item.id);
           const quantity = currProduct?.quantity || 0;
           return (
             <div className="product" key={item.id}>
@@ -76,26 +80,23 @@ export default function Home() {
               </div>
               <div>
                 <p>Price: {item.price} Rupees</p>
-                <p>Name: {item.name}</p>
+                <p>Name: {item.title}</p>
                 <p>category: {item.category}</p>
                 <p>discount: {item.discountPercentage}%</p>
                 <p>In Stock: {item.stock}</p>
                 <button
-                  onClick={() => handleAddToCart(item)}
-                  disabled={quantity > 0}
+                  onClick={() => handleAddTocart(item)}
+                  disabled={quantity >= 0}
                 >
                   Add To Cart
                 </button>
                 <div>
-                  <button
-                    onClick={() => handleDecrement(item)}
-                    disabled={quantity <= 0}
-                  >
+                  <button onClick={() => handleDecrermentFromCart(item)}>
                     -
                   </button>
-                  <span>Quantity: {quantity}</span>
+                  <span>Quantity: {item.quantity}</span>
                   <button
-                    onClick={() => handleIncrement(item)}
+                    onClick={() => handleAddTocart(item)}
                     disabled={item.stock <= 0}
                   >
                     +
