@@ -186,8 +186,8 @@ createOrder(cartItem)
   });
 */
 
-// Retry Promise
-
+//=============== Retry Promise =====================//
+/*
 let cartItem = ["shoes", "shirt", "kurta"];
 
 // Validations
@@ -273,3 +273,27 @@ createOrder(cartItem)
   .catch((err) => {
     console.log(err);
   });
+*/
+
+//============ Simulation of promise using setTimeout and Retry Promise ======//
+
+/**
+    👉🏼 Flow (Each step depends on previous)
+    👉🏼 createOrder(cart) → returns orderId
+    👉🏼 proceedToPayment(orderId) → returns paymentInfo
+    👉🏼 showOrderSummary(paymentInfo) → returns summary
+    👉🏼 updateWallet(summary) → returns walletBalance
+*/
+
+let cartItem = ["shoes", "shirt", "kurta"];
+
+// Validations
+
+// Promises
+
+// Promise Chaining
+function createOrder(cart) {}
+
+function proceedToPayment(orderId) {}
+
+function showOrderSummary(paymentInfo) {}
